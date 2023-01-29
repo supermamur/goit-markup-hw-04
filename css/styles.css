@@ -206,7 +206,20 @@ img {
   padding: 100px 0;
   background-color: var(--secondary-background-color);
 }
+.footer-box {
+  display: flex;
+  align-items: flex-start;
+}
+.footer__social-title {
+  color: var(--light-font-color);
+  line-height: 1.5;
+  letter-spacing: 0.2;
+  margin-top: 0;
+}
 
+.footer__social-links {
+  margin-left: 120px;
+}
 .footer__logo {
   display: inline-block;
   color: var(--light-font-color);
@@ -220,6 +233,32 @@ img {
   color: var(--light-font-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+  margin-top: 20px;
+}
+.social-list--item {
+  /* flex-basis: calc((100% - 3 * 24px) / 4); */
+
+  background-color: #ffffff1a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.social-list--link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-list--link {
+  fill: var(--ligth-background-color);
 }
 
 .ghost {
