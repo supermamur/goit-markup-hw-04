@@ -30,6 +30,7 @@ Secondary - 16px
   --secondary-font-color: #434455;
   --light-font-color: #ffffff;
   --blue-color: #4d5ae5;
+  --subtle-text: #8e8f99;
 
   /*--background-colors-- */
   --main-background-color: #ffffff;
@@ -58,6 +59,8 @@ html {
 .hero {
   max-width: 1440px;
   height: 600px;
+  background-position: cover;
+  background-repeat: no-repeat;
   margin: auto;
   padding: 188px 0;
   text-align: center;
@@ -158,15 +161,23 @@ html {
 }
 .customer-item {
   flex-basis: calc((100% - 5 * 24px) / 6);
-  border: 1px solid var(--border-color);
-  padding: 16px 0;
-  border-radius: 4px;
-  background-color: white;
 }
 .customer-link {
   width: 100%;
-  height: 100%;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
+}
+.customer-list__icon {
+  fill: var(--subtle-text);
+}
+
+.customer-link:is(:hover, :focus) {
+  border: 1px solid var(--button-background-color);
+}
+.customer-link:is(:hover, :focus) .customer-list__icon {
+  fill: var(--button-background-color);
 }

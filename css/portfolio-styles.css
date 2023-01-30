@@ -87,11 +87,19 @@ html {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
-.pro .project-info {
+.projects__item:is(:hover, :focus) {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16);
+}
+
+.project-info {
   padding: 32px 0 32px 16px;
   border: 1px solid black;
 }
 
+.project-link {
+  text-decoration: none;
+}
 /* Projetcs Navigation */
 .portfolio {
   padding-top: 96px;
